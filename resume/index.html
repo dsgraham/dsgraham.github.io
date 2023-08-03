@@ -1,0 +1,294 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Derek Graham :: Resume</title>
+  <meta name="description" content="Resume of Derek Graham - software developer" />
+  <meta name="keywords" content="Derek Graham,Software,Engineer,Web,Developer,Traverse City,Michigan" />
+
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+
+  <!-- Facebook Metadata /-->
+  <meta property="fb:page_id" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="The resume of Derek Graham - Web Developer - Traverse City, MI"/>
+  <meta property="og:title" content="Derek Graham :: Resume"/>
+
+  <!-- Google+ Metadata /-->
+  <meta itemprop="name" content="Derek Graham :: Resume">
+  <meta itemprop="description" content="The resume of Derek Graham - Web Developer - Traverse City, MI">
+  <meta itemprop="image" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <link rel="stylesheet" href="gumby/css/gumby.css">
+
+  <script src="gumby/js/libs/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body class="resume">
+
+    <div class="row header" itemscope itemtype="http://schema.org/Person">
+      <div class="seven columns" id="heading">
+        <h1 itemprop="name">Derek Graham</h1>
+      </div>
+      <div class="five columns" id="contact">
+<!--        <div itemprop="url"><i class="icon-monitor"></i><a href="http://derekgraham.tech">derekgraham.tech</a></div>-->
+        <div><i class="icon-location"></i>Traverse City, MI, USA</div>
+        <div itemprop="email"><i class="icon-mail"></i><a href="mailto:dereksgraham@gmail.com">dereksgraham@gmail.com</a></div>
+        <div itemprop="phone"><i class="icon-phone"></i><a href="tel:+1-616-318-8136">616 318 8136</a></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <h2 class="twelve columns"><i class="icon-tools"></i>Highlights</h2>
+    </div>
+    <div class="row">
+      <ul class="eleven columns push_one">
+        <li>20 years of professional experience in the field of software engineering.</li>
+        <li>A wide variety of experience - from large corporations, mid-size companies serving many clients, a self-employed freelancer and an early stage start-up.</li>
+        <li>A proven ability to solve complex problems with efficiency and accuracy.</li>
+        <li>Extensive experience with Ruby, Rails, Object Oriented PERL, PHP, Swift, Oracle SQL, PostgreSQL, Amazon Web Services.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+        <h2 class="twelve columns"><i class="icon-bookmarks"></i>Education</h2>
+    </div>
+    <div class="row">
+        <div class="one column bold">2004</div>
+        <div class="six columns">
+            <p>Computer Science - BS</p>
+            <p>Grand Valley State University, Allendale, MI</p>
+        </div>
+    </div>
+
+    <div class="row">
+      <h2 class="twelve columns"><i class="icon-keyboard"></i>Experience</h2>
+    </div>
+
+    <div class="row">
+        <span class="twelve columns date">July 2020 - Present</span>
+    </div>
+    <div class="row">
+        <div class="eight columns job">
+            <h4>Lead Engineer - Evvnt Technologies, Inc.</h4>
+            <h5>Event ticketing, marketing and discovery / Remote</h5>
+        </div>
+        <div class="four columns logo geotix hide-phone">
+            <img src="gumby/img/evvnt-logo.png"/>
+        </div>
+    </div>
+    <div class="row job-description">
+        <ul class="eleven columns push_one">
+            <li>Developed a high-performance shopping cart/checkout that uses Redis to store ActiveRecord objects then persist
+                to the database in one transaction when the purchase is completed. This system significantly reduced server load
+                during high demand events.
+            </li>
+            <li>Created an e-commerce function within our application that allows ticket sellers to also offer merchandise. Includes
+                custom product attributes, inventory management and an at-the-gate fulfillment system using QR code scans within the
+                Evvnt Mobile Box Office iOS app.
+            </li>
+            <li>Added multi-currency capability to Evvnt core application with the ability to use separate Stripe Platform accounts
+                for each region, avoiding the need to perform currency exchanges.
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+      <span class="twelve columns date">August 2015 - July 2020</span>
+    </div>
+    <div class="row">
+      <div class="ten columns job">
+        <h4 style="display: inline">Senior Software Engineer - GeoTix</h4><p style="display: inline; padding-left: 3px;">(acquired by Evvnt, July 2020)</p>
+        <h5>White label event ticketing / Traverse City, MI</h5>
+      </div>
+      <div class="two columns logo geotix hide-phone">
+          <img src="gumby/img/geotix-logo.png" />
+      </div>
+    </div>
+    <div class="row job-description">
+      <ul class="eleven columns push_one">
+          <li>As employee number 3 and sole engineer for the first year, I was critical in all technical aspects of the product.
+              From a rough prototype to a production ready, scalable SAAS event ticketing platform with a presence in over 80 cities.</li>
+          <li>Created an accounting system for a complex business model that allowed the company to easily track the recipient of each part of a ticket sale.</li>
+          <li>Designed and implemented a component that allowed the creation of a series of ticketed events, where any attribute of a single occurrence could be overridden, using an entity-attribute-value data model.
+          A single flattened table that was updated by triggers in PostgreSQL allowed the retrieval of data using the normal Ruby on Rails conventions.</li>
+      </ul>
+    </div>
+
+    <div class="row" style="marin-top: 20px;">
+      <span class="twelve columns date">July 2014 - January 2016</span>
+    </div>
+    <div class="row">
+      <div class="eight columns job">
+        <h4>Owner / Principal Engineer - Gray Dog Interactive</h4>
+        <h5>Traverse City, MI</h5>
+      </div>
+      <div class="four columns logo gray-dog hide-phone">
+          <img src="gumby/img/gray-dog-logo.png"/>
+      </div>
+    </div>
+    <div class="row job-description">
+      <ul class="eleven columns push_one">
+        <li>Full-stack web development, application development and technical consulting</li>
+        <li>Content management systems, e-commerce, custom web applications</li>
+        <li>Built and sold an e-commerce site selling pet products with fully automated drop shipping</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <span class="twelve columns date">October 2011 - July 2014</span>
+    </div>
+    <div class="row">
+      <div class="eight columns job">
+        <h4>Software Engineer - OneUpWeb</h4>
+        <h5>Digital marketing / Traverse City, MI</h5>
+      </div>
+      <div class="four columns logo oneupweb hide-phone">
+          <img src="gumby/img/oneupweb-logo.png"
+      </div>
+    </div>
+    <div class="row job-description">
+      <ul class="eleven columns push_one">
+        <li>Development and maintenance of in-house conversion tracking SAAS product and project management software.</li>
+        <li>Development of client web sites - custom applications, content management systems and e-commerce sites - using technologies such as Magento, Wordpress and CakePHP.</li>
+        <li>Instrumental in refining the company's software development process, making larger and more complex projects profitable.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <span class="twelve columns date">May 2004 - September 2011</time>
+    </div>
+    <div class="row">
+      <div class="eight columns job">
+        <h4>Software Engineer - Priority Health</h4>
+        <h5>Health insurance / Grand Rapids, MI</h5>
+      </div>
+      <div class="four columns logo priority-health hide-phone">
+          <img src="gumby/img/priority.png"/>
+      </div>
+
+    </div>
+    <div class="row job-description">
+      <ul class="eleven columns push_one">
+        <li>Development of web applications and supporting back-end processes using Perl to present complex data sets in a clear and understandable format.</li>
+        <li>Experience developing technical plans for projects and creating documentation.</li>
+        <li>Led the web development team's support staff and was active in mentoring and training new team members.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <span class="twelve columns date">December 2003 - May 2004</span>
+    </div>
+    <div class="row">
+      <div class="eight columns job">
+        <h4>Intern - Steelcase</h4>
+        <h5>Furniture manufacturer / Grand Rapids, MI</h5>
+      </div>
+      <div class="four columns logo steelcase hide-phone">
+          <img src="gumby/img/steelcase-logo.png"/>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="twelve columns push_one">
+        <li>Developed an automated secure business to business file transfer service using GPG public key encryption with an administrative web interface.</li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <h2 class="twelve columns"><i class="icon-plus"></i>Personal</h2>
+    </div>
+    <div class="row">
+      <ul class="twelve columns" id="personal">
+        <li>Hobbies include cycling, skiing, backpacking and paddling (SUP and surfski).</li>
+        <li>Accomplished category I road and mountain cyclist. Four time Michigan state champion and former member of the Bissell-ABG-Giant pro development road racing team.</li>
+      </ul>
+    </div>
+
+  <!-- Grab Google CDN's jQuery, fall back to local if offline -->
+  <!-- 2.0 for modern browsers, 1.10 for .oldie -->
+  <script>
+  var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+  if(!oldieCheck) {
+  document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+  } else {
+  document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+  }
+  </script>
+  <script>
+  if(!window.jQuery) {
+  if(!oldieCheck) {
+    document.write('<script src="gumby/js/libs/jquery-2.0.2.min.js"><\/script>');
+  } else {
+    document.write('<script src="gumby/js/libs/jquery-1.10.1.min.js"><\/script>');
+  }
+  }
+  </script>
+
+  <!--
+  Include gumby.js followed by UI modules followed by gumby.init.js
+  Or concatenate and minify into a single file -->
+  <script gumby-touch="js/libs" src="gumby/js/libs/gumby.min.js"></script>
+
+  <!--
+  Google's recommended deferred loading of JS
+  gumby.min.js contains gumby.js, all UI modules and gumby.init.js
+
+  Note: If you opt to use this method of defered loading,
+  ensure that any javascript essential to the initial
+  display of the page is included separately in a normal
+  script tag.
+
+  <script type="text/javascript">
+  function downloadJSAtOnload() {
+  var element = document.createElement("script");
+  element.src = "gumby/js/libs/gumby.min.js";
+  document.body.appendChild(element);
+  }
+  if (window.addEventListener)
+  window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+  window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
+  </script> -->
+
+  <script src="gumby/js/plugins.js"></script>
+  <script src="gumby/js/main.js"></script>
+
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <!--<script>
+  window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+  Modernizr.load({
+    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+  });
+  </script>-->
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49231741-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-49231741-1');
+  </script>
+  </body>
+</html>

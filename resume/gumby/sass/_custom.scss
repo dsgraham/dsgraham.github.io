@@ -1,0 +1,249 @@
+// Your custom SCSS should be written here...
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,100italic,300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Nobile:700,400);
+@font-face {
+  font-family: 'Ginga';
+  src: url('../fonts/28 Days Later.ttf');
+}
+
+html.no-js {
+  .hide, .hide-swing {
+    display: block !important;
+  }
+}
+
+body {
+  &.home {
+    font: 16px/17px "Lato", sans-serif;
+    font-weight: 300;
+    background-image: url('../img/back.jpg');
+    background-size: cover;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#outer-container {
+  background: rgba(0,0,0,0.5);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  color: white;
+  .hide, .hide-swing {
+    display: none;
+  }
+  > div {
+    z-index: 99999;
+    .row {
+      max-width: 30px;
+      min-width: 10px;
+      padding: 10px 0px;
+      margin-left: 60px;
+      overflow: visible;
+      border-bottom: 3px solid white;
+      border-left: 3px solid white;
+      span {
+        position: relative;
+        left: 40px;
+        top: 18px;
+        white-space: nowrap;
+        font-weight: 900;
+        &:hover {
+          color: red;
+        }
+        i {
+          display: inline;
+          margin-right: 10px;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+      &:first-child {
+        border-left: none;
+        padding-bottom: 0px;
+        margin-left: 0px;
+        width: 1900px;
+        min-width: 100%;
+        max-width: 100%;
+        h1 {
+          padding: 0px;
+          font: 100px/120px "Ginga";
+          color: white;
+          margin-left: 50px;
+          white-space: nowrap;
+          @include respond(all-phones) {
+            font-size: 15vw;
+            margin-left: 0px;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.resume {
+  a {
+    text-decoration: none;
+    color: #555555;
+    &:hover {
+      text-decoration: underline;
+      color: red;
+    }
+  }
+  .links {
+    a {
+      display: block;
+      text-decoration: underline;
+      color: red;
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+  padding-top: 30px;
+  .header {
+    font-weight: 100;
+  }
+  #heading {
+    white-space: nowrap;
+    border-bottom: 3px solid black;
+    padding-bottom: 33px;
+    h1 {
+      font-family: 'Nobile', sans-serif;
+      font-weight: 900;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      @include respond("max-width: 460px") {
+        font-size: 2.4rem;
+      }
+      @include respond("print") {
+        font-size: 3.0rem;
+      }
+    }
+    h4 {
+      font-family: 'Lato', sans-serif;
+      padding: 0px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      line-height: 1.0em;
+    }
+    @include respond("max-width: 865px") {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: 0px;
+      width: 100%;
+    }
+    @include respond("max-width: 460px") {
+      padding-right: 10px;
+    }
+
+  }
+  #contact {
+    margin-top: 11px;
+    @include respond("max-width: 865px") {
+      margin-top: 2px;
+      width: 100%;
+    }
+    @include respond("max-width: 460px") {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+    }
+    @include respond("print") {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+    }
+  }
+  h2 {
+    font-family: 'Nobile', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+    i {
+      padding-right: 5px;
+    }
+  }
+  p {
+    margin: 0px;
+  }
+  span.date {
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-style: italic;
+  }
+  .job {
+    h4 {
+      font-weight: 400;
+      padding-bottom: 0px;
+      margin-bottom: 0px
+    }
+    h5 {
+      font-size: 1.0rem;
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+  }
+  .job-description {
+    margin-bottom: 15px;
+  }
+  ul {
+    @include respond(all-phones) {
+      margin-left: 20px !important;
+    }
+  }
+  li {
+    list-style-type: square;
+  }
+  ul#personal {
+    margin-left: 35px;
+    margin-bottom: 100px;
+    li {
+      list-style-type: square;
+    }
+  }
+  .logo {
+    background-repeat: no-repeat;
+    height: 25px;
+    padding-bottom: 20px;
+    &.geotix {
+      background-position: left center;
+      background-size: contain;
+      background-image: inline-image('../img/geotix-logo.png');
+    }
+    &.steelcase {
+      background-image: inline-image('../img/steelcase-logo.png');
+    }
+    &.priority-health {
+      background-image: inline-image('../img/priority.png');
+    }
+    &.oneupweb {
+      background-image: inline-image('../img/oneupweb-logo.png');
+    }
+    &.gray-dog {
+      height: 50px;
+      background-image: inline-image('../img/gray-dog-logo.png');
+    }
+    &.evvnt {
+      height: 50px;
+      background-image: inline-image('../img/evvnt-logo.webp');
+    }
+  }
+  .hide-phone {
+    @include respond(all-phones) {
+      display: none;
+    }
+  }
+}
